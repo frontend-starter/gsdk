@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create(),
     runSequence = require('run-sequence'),
     paths = {
-    views: 'src/views/demo.pug',
+    views: 'src/views/index.pug',
     templates: 'src/views/templates/*.pug',
     styles: 'src/styles/main.styl',
     scripts: 'src/scripts/main.coffee',
