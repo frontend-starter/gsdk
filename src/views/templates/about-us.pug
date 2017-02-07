@@ -1,0 +1,13 @@
+extends ../base
+append stylesheets
+    link(rel="stylesheet" href="styles/examples.css")
+
+block content
+    main.about-us
+        include ../navbars/nav-transparent.html
+        .wrapper
+            include ../examples/about-us.html
+            include ../footers/footer-sm.html
+
+block javascript
+    script(src="scripts/examples/about-us.js")

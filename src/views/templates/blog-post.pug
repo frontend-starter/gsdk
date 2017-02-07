@@ -1,0 +1,13 @@
+extends ../base
+append stylesheets
+    link(rel="stylesheet" href="styles/examples.css")
+
+block content
+    main.blog-post
+        include ../navbars/nav-default.html
+        .wrapper
+            include ../examples/blog-post.html
+            include ../footers/footer-md.html
+
+block javascript
+    script(src="scripts/examples/blog-post.js")

@@ -1,0 +1,13 @@
+extends ../base
+append stylesheets
+    link(rel="stylesheet" href="styles/examples.css")
+
+block content
+    main.product-page
+        include ../navbars/nav-default.html
+        .wrapper
+            include ../examples/product-page.html
+            include ../footers/footer-md.html
+
+block javascript
+    script(src="scripts/examples/product-page.js")

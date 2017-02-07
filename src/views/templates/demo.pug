@@ -1,0 +1,13 @@
+extends ../base
+prepend styles
+    link(rel="stylesheet" href="styles/carousel.css")
+
+block content
+    .wrapper
+        include ../examples/demo.html
+
+append scripts
+    script(src="scripts/demo.js")
+
+prepend javascript
+    script(src="scripts/examples/demo.js")
