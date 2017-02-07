@@ -1,13 +1,20 @@
 extends base
-prepend styles
-    link(rel="stylesheet" href="styles/carousel.css")
+append stylesheets
+    link(rel="stylesheet" href="styles/examples.css")
 
 block content
-    .wrapper
-        include examples/demo.html
+    include navbars/nav-transparent.html
+    main.home
+        .wrapper
+            include sections/header.html
+            include sections/description-txt.html
+            include sections/team.html
+            include sections/features.html
+            include sections/gallery.html
+            include sections/testimonials.html
+            include sections/suscribe-transparent.html
+            include sections/contact.html
+            include footers/footer-lg.html
 
-append scripts
-    script(src="scripts/demo.js")
-
-prepend javascript
-    script(src="scripts/examples/demo.js")
+block javascript
+    script(src="scripts/examples/home.js")

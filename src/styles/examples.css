@@ -25,6 +25,11 @@
   margin-bottom: 30px;
 }
 
+.space-25 {
+  height: 25px;
+  display: block;
+}
+
 .space-50 {
   height: 50px;
   display: block;
